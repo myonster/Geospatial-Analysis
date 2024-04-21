@@ -36,6 +36,9 @@ This notebook focuses on predictive analytics using machine learning techniques 
 - **Platform Prediction**: Using classifiers like Logistic Regression and Decision Trees to predict the operating system of the device based on location accuracy metrics.
 - **Geospatial Prediction**: Developing regression models to forecast future locations based on historical data patterns, employing algorithms such as Neural Networks and K-Nearest Neighbors for spatial prediction.
 
+link to view map:
+[https://nbviewer.org/github/myonster/Geospatial-Analysis/blob/main/predictive_model.ipynb]
+
 ## Installation
 Python environment with the necessary libraries:
 
@@ -48,6 +51,6 @@ Python environment with the necessary libraries:
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://your-repository-url.git
+git clone https://github.com/myonster/Geospatial-Analysis.git
 cd your-repository-directory
 pip install -r requirements.txt
