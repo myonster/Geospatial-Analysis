@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9e2d7c7d033ac9d050a6f1f77a53274a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9e2d7c7d033ac9d050a6f1f77a53274a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9e2d7c7d033ac9d050a6f1f77a53274a = L.map(
+                "map_9e2d7c7d033ac9d050a6f1f77a53274a",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: true,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_244fb07cd9f208a2ff97486826686a0a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_244fb07cd9f208a2ff97486826686a0a.addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+            var circle_marker_94d1bc0be56f591b244d0a813a803f46 = L.circleMarker(
+                [40.753567, -73.976306],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_4732b10313332680c97dd7846ec17814 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a96e4d7eae0960f489a7365db032245 = $(`<div id="html_6a96e4d7eae0960f489a7365db032245" style="width: 100.0%; height: 100.0%;"><h4>Ground Walk&nbsp;&nbsp;14:27:59</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;-1.0</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;327.1309432318165</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;2.7777777777777777e-10</h4><br><h4>Est Speed: &nbsp;&nbsp;1177671395634.5396</h4><br><h4>Altitude: &nbsp;&nbsp;7.1</h4><br></div>`)[0];
+                popup_4732b10313332680c97dd7846ec17814.setContent(html_6a96e4d7eae0960f489a7365db032245);
+            
+        
+
+        circle_marker_94d1bc0be56f591b244d0a813a803f46.bindPopup(popup_4732b10313332680c97dd7846ec17814)
+        ;
+
+        
+    
+    
+            var circle_marker_06af502afcc75547b0950e56fb47eef5 = L.circleMarker(
+                [40.754847, -73.979795],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_d600855653633f8ebb743ab63c5817e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0c5be31fd30f8e938d857c34bd55c88 = $(`<div id="html_c0c5be31fd30f8e938d857c34bd55c88" style="width: 100.0%; height: 100.0%;"><h4>Ground Walk&nbsp;&nbsp;14:47:09</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;-1.0</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;19.603373114398906</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;2.7777777777777777e-10</h4><br><h4>Est Speed: &nbsp;&nbsp;70572143211.83606</h4><br><h4>Altitude: &nbsp;&nbsp;22.8</h4><br></div>`)[0];
+                popup_d600855653633f8ebb743ab63c5817e8.setContent(html_c0c5be31fd30f8e938d857c34bd55c88);
+            
+        
+
+        circle_marker_06af502afcc75547b0950e56fb47eef5.bindPopup(popup_d600855653633f8ebb743ab63c5817e8)
+        ;
+
+        
+    
+    
+            var circle_marker_fa90af366cda437f1eca6b2f4e5fd2df = L.circleMarker(
+                [40.754711, -73.979647],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_1f61f6254f31a647b7cc2ff1be27ccfc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e091a3ed4ed95865e734bcb3b778d2e = $(`<div id="html_5e091a3ed4ed95865e734bcb3b778d2e" style="width: 100.0%; height: 100.0%;"><h4>Ground Walk&nbsp;&nbsp;15:08:01</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;-1.0</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;22.747214956553776</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;2.7777777777777777e-10</h4><br><h4>Est Speed: &nbsp;&nbsp;81889973843.5936</h4><br><h4>Altitude: &nbsp;&nbsp;23.1</h4><br></div>`)[0];
+                popup_1f61f6254f31a647b7cc2ff1be27ccfc.setContent(html_5e091a3ed4ed95865e734bcb3b778d2e);
+            
+        
+
+        circle_marker_fa90af366cda437f1eca6b2f4e5fd2df.bindPopup(popup_1f61f6254f31a647b7cc2ff1be27ccfc)
+        ;
+
+        
+    
+    
+            var circle_marker_95c2786a95fcb83898a8780040d70536 = L.circleMarker(
+                [40.754886, -73.979787],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_75545c81e70153d636ca1691b27e6de4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fedabb2d14d2781ea4f3cb2d87cb1584 = $(`<div id="html_fedabb2d14d2781ea4f3cb2d87cb1584" style="width: 100.0%; height: 100.0%;"><h4>Ground Walk&nbsp;&nbsp;15:27:19</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;-1.0</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;7.935614386245025</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;2.7777777777777777e-10</h4><br><h4>Est Speed: &nbsp;&nbsp;28568211790.48209</h4><br><h4>Altitude: &nbsp;&nbsp;22.8</h4><br></div>`)[0];
+                popup_75545c81e70153d636ca1691b27e6de4.setContent(html_fedabb2d14d2781ea4f3cb2d87cb1584);
+            
+        
+
+        circle_marker_95c2786a95fcb83898a8780040d70536.bindPopup(popup_75545c81e70153d636ca1691b27e6de4)
+        ;
+
+        
+    
+    
+            var circle_marker_1e46d471f77456955b7034350e5edde6 = L.circleMarker(
+                [40.754931, -73.97986],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_f9ad881251d1ec433af0657d94dbc34a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_044c4daca1b9f129b66100cfca2b28f8 = $(`<div id="html_044c4daca1b9f129b66100cfca2b28f8" style="width: 100.0%; height: 100.0%;"><h4>Ground Walk&nbsp;&nbsp;15:48:08</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;-1.0</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;13.740767845926502</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;8.333333333333334e-10</h4><br><h4>Est Speed: &nbsp;&nbsp;16488921415.111803</h4><br><h4>Altitude: &nbsp;&nbsp;22.2</h4><br></div>`)[0];
+                popup_f9ad881251d1ec433af0657d94dbc34a.setContent(html_044c4daca1b9f129b66100cfca2b28f8);
+            
+        
+
+        circle_marker_1e46d471f77456955b7034350e5edde6.bindPopup(popup_f9ad881251d1ec433af0657d94dbc34a)
+        ;
+
+        
+    
+    
+            var circle_marker_b7b378cda41596460cbbc3950d3967ea = L.circleMarker(
+                [40.75483, -73.979766],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_d39c457093b5ff069ed22415525a80cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f8755db75dc47d20b1c81f56bc2e4dd = $(`<div id="html_2f8755db75dc47d20b1c81f56bc2e4dd" style="width: 100.0%; height: 100.0%;"><h4>Ground Walk&nbsp;&nbsp;16:50:24</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;-1.0</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;1.9325099340098322</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;0.0</h4><br><h4>Est Speed: &nbsp;&nbsp;0</h4><br><h4>Altitude: &nbsp;&nbsp;22.8</h4><br></div>`)[0];
+                popup_d39c457093b5ff069ed22415525a80cf.setContent(html_2f8755db75dc47d20b1c81f56bc2e4dd);
+            
+        
+
+        circle_marker_b7b378cda41596460cbbc3950d3967ea.bindPopup(popup_d39c457093b5ff069ed22415525a80cf)
+        ;
+
+        
+    
+    
+            var circle_marker_e00ec2a5dba047cbb4a482cc84902557 = L.circleMarker(
+                [40.754846, -73.979775],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_f83925688f5d44629aea752c478ea1da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9adb2955ebdf9ae67e3f65c5c976dfdd = $(`<div id="html_9adb2955ebdf9ae67e3f65c5c976dfdd" style="width: 100.0%; height: 100.0%;"><h4>Ground Walk&nbsp;&nbsp;16:50:25</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;-1.0</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;4.989823733904906</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;2.7777777777777777e-10</h4><br><h4>Est Speed: &nbsp;&nbsp;17963365442.057663</h4><br><h4>Altitude: &nbsp;&nbsp;22.8</h4><br></div>`)[0];
+                popup_f83925688f5d44629aea752c478ea1da.setContent(html_9adb2955ebdf9ae67e3f65c5c976dfdd);
+            
+        
+
+        circle_marker_e00ec2a5dba047cbb4a482cc84902557.bindPopup(popup_f83925688f5d44629aea752c478ea1da)
+        ;
+
+        
+    
+    
+            var circle_marker_a0f74d582c0f7421609e517945af5964 = L.circleMarker(
+                [40.754888, -73.979796],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_a07ef72b8cf90b54224afacd65aea4a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b60902bd0c4f788fb6c79b5555be111 = $(`<div id="html_0b60902bd0c4f788fb6c79b5555be111" style="width: 100.0%; height: 100.0%;"><h4>Ground Walk&nbsp;&nbsp;17:10:28</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;-1.0</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;6.123138029286726</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;2.7777777777777777e-10</h4><br><h4>Est Speed: &nbsp;&nbsp;22043296905.432213</h4><br><h4>Altitude: &nbsp;&nbsp;22.6</h4><br></div>`)[0];
+                popup_a07ef72b8cf90b54224afacd65aea4a2.setContent(html_0b60902bd0c4f788fb6c79b5555be111);
+            
+        
+
+        circle_marker_a0f74d582c0f7421609e517945af5964.bindPopup(popup_a07ef72b8cf90b54224afacd65aea4a2)
+        ;
+
+        
+    
+    
+            var circle_marker_7b5314ca1f7bebdf46ace15b48224003 = L.circleMarker(
+                [40.754835, -73.979776],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_b8faeaff202aaa691c83859344fe2e8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_130ff9d53c9171f4aaa1b427103cba4a = $(`<div id="html_130ff9d53c9171f4aaa1b427103cba4a" style="width: 100.0%; height: 100.0%;"><h4>Ground Walk&nbsp;&nbsp;17:29:32</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;-1.0</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;3.7183174832682218</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;2.7777777777777777e-10</h4><br><h4>Est Speed: &nbsp;&nbsp;13385942939.765598</h4><br><h4>Altitude: &nbsp;&nbsp;22.8</h4><br></div>`)[0];
+                popup_b8faeaff202aaa691c83859344fe2e8c.setContent(html_130ff9d53c9171f4aaa1b427103cba4a);
+            
+        
+
+        circle_marker_7b5314ca1f7bebdf46ace15b48224003.bindPopup(popup_b8faeaff202aaa691c83859344fe2e8c)
+        ;
+
+        
+    
+    
+            var circle_marker_bb1fb272e4c30bbfa4f26659f10a37f0 = L.circleMarker(
+                [40.754858, -73.979808],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_423328562395cb1f3d657b59b9ff73f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b222bbe692715947017967e5a451cae2 = $(`<div id="html_b222bbe692715947017967e5a451cae2" style="width: 100.0%; height: 100.0%;"><h4>Ground Walk&nbsp;&nbsp;17:49:56</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;-1.0</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;201.49081476242398</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;0.0</h4><br><h4>Est Speed: &nbsp;&nbsp;0</h4><br><h4>Altitude: &nbsp;&nbsp;22.5</h4><br></div>`)[0];
+                popup_423328562395cb1f3d657b59b9ff73f1.setContent(html_b222bbe692715947017967e5a451cae2);
+            
+        
+
+        circle_marker_bb1fb272e4c30bbfa4f26659f10a37f0.bindPopup(popup_423328562395cb1f3d657b59b9ff73f1)
+        ;
+
+        
+    
+    
+            var circle_marker_6ed29a89190303f26740365bcb660adf = L.circleMarker(
+                [40.754515, -73.977465],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_629a06ceb73f8b072684b313b585fd7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3193cc1e00396d1891392465b93f17e1 = $(`<div id="html_3193cc1e00396d1891392465b93f17e1" style="width: 100.0%; height: 100.0%;"><h4>Ground Walk&nbsp;&nbsp;17:56:10</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;-1.0</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;144.84558417975543</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;0.0</h4><br><h4>Est Speed: &nbsp;&nbsp;0</h4><br><h4>Altitude: &nbsp;&nbsp;21.4</h4><br></div>`)[0];
+                popup_629a06ceb73f8b072684b313b585fd7d.setContent(html_3193cc1e00396d1891392465b93f17e1);
+            
+        
+
+        circle_marker_6ed29a89190303f26740365bcb660adf.bindPopup(popup_629a06ceb73f8b072684b313b585fd7d)
+        ;
+
+        
+    
+    
+            var circle_marker_1625f4bdfecbb4a69048140fe9ffe992 = L.circleMarker(
+                [40.753263, -73.977946],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_0c6e59d2528a69e50c8b706aa7f3704f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c03d91331e2c265d79113e993cf4053 = $(`<div id="html_7c03d91331e2c265d79113e993cf4053" style="width: 100.0%; height: 100.0%;"><h4>Ground Walk&nbsp;&nbsp;17:58:29</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;-1.0</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;3520.4869784644475</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;0.0</h4><br><h4>Est Speed: &nbsp;&nbsp;0</h4><br><h4>Altitude: &nbsp;&nbsp;21.5</h4><br></div>`)[0];
+                popup_0c6e59d2528a69e50c8b706aa7f3704f.setContent(html_7c03d91331e2c265d79113e993cf4053);
+            
+        
+
+        circle_marker_1625f4bdfecbb4a69048140fe9ffe992.bindPopup(popup_0c6e59d2528a69e50c8b706aa7f3704f)
+        ;
+
+        
+    
+    
+            var circle_marker_49e283c0e6e2981e1e72500093f5d0ba = L.circleMarker(
+                [40.779871, -73.955278],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_6938b27f608c5f99c73ef770cfcc41b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94eabb67ad299ac821b2574f9644ddf5 = $(`<div id="html_94eabb67ad299ac821b2574f9644ddf5" style="width: 100.0%; height: 100.0%;"><h4>Ground Walk&nbsp;&nbsp;18:09:16</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;-1.0</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;417.34318846915517</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;0.0</h4><br><h4>Est Speed: &nbsp;&nbsp;0</h4><br><h4>Altitude: &nbsp;&nbsp;18.4</h4><br></div>`)[0];
+                popup_6938b27f608c5f99c73ef770cfcc41b2.setContent(html_94eabb67ad299ac821b2574f9644ddf5);
+            
+        
+
+        circle_marker_49e283c0e6e2981e1e72500093f5d0ba.bindPopup(popup_6938b27f608c5f99c73ef770cfcc41b2)
+        ;
+
+        
+    
+    
+            var circle_marker_1b136442c71149c76c7080f04a75b983 = L.circleMarker(
+                [40.776619, -73.9528],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_69fdfd4c3130f0f546818328d3c9710f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6d033ac7d5950041aca17b84d18e9d3 = $(`<div id="html_e6d033ac7d5950041aca17b84d18e9d3" style="width: 100.0%; height: 100.0%;"><h4>Short Stay&nbsp;&nbsp;18:18:38</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;3.13</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;2.5585035501482443</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;0.0</h4><br><h4>Est Speed: &nbsp;&nbsp;0</h4><br><h4>Altitude: &nbsp;&nbsp;23.6</h4><br></div>`)[0];
+                popup_69fdfd4c3130f0f546818328d3c9710f.setContent(html_e6d033ac7d5950041aca17b84d18e9d3);
+            
+        
+
+        circle_marker_1b136442c71149c76c7080f04a75b983.bindPopup(popup_69fdfd4c3130f0f546818328d3c9710f)
+        ;
+
+        
+    
+    
+            var circle_marker_c429414030c84a824b0f7dc671d54399 = L.circleMarker(
+                [40.776597, -73.952791],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_f5db5476025e5395bbe99d2e1be893b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c47954e99adc50039cfc551b7498158c = $(`<div id="html_c47954e99adc50039cfc551b7498158c" style="width: 100.0%; height: 100.0%;"><h4>Short Stay&nbsp;&nbsp;18:18:39</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;5.94</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;67.409194691761</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;0.0</h4><br><h4>Est Speed: &nbsp;&nbsp;0</h4><br><h4>Altitude: &nbsp;&nbsp;23.3</h4><br></div>`)[0];
+                popup_f5db5476025e5395bbe99d2e1be893b8.setContent(html_c47954e99adc50039cfc551b7498158c);
+            
+        
+
+        circle_marker_c429414030c84a824b0f7dc671d54399.bindPopup(popup_f5db5476025e5395bbe99d2e1be893b8)
+        ;
+
+        
+    
+    
+            var circle_marker_ea64c8a1468164da4c62c826c3b9d33c = L.circleMarker(
+                [40.776395, -73.952038],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_4efe62bef84e9cc3367329edf17f8022 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3032a11216850a9d6ab89dd1801e20e = $(`<div id="html_a3032a11216850a9d6ab89dd1801e20e" style="width: 100.0%; height: 100.0%;"><h4>Ground Trans&nbsp;&nbsp;18:20:26</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;3.67</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;473.0548453048807</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;2.7777777777777777e-10</h4><br><h4>Est Speed: &nbsp;&nbsp;1702997443097.5706</h4><br><h4>Altitude: &nbsp;&nbsp;24.7</h4><br></div>`)[0];
+                popup_4efe62bef84e9cc3367329edf17f8022.setContent(html_a3032a11216850a9d6ab89dd1801e20e);
+            
+        
+
+        circle_marker_ea64c8a1468164da4c62c826c3b9d33c.bindPopup(popup_4efe62bef84e9cc3367329edf17f8022)
+        ;
+
+        
+    
+    
+            var circle_marker_4850f95c160d0f00ddafd4545b0f0628 = L.circleMarker(
+                [40.780228, -73.954483],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_6eff3b4d442e235f6716815c4bac780f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5362c6807fc12886378d487470867ac = $(`<div id="html_e5362c6807fc12886378d487470867ac" style="width: 100.0%; height: 100.0%;"><h4>Ground Walk&nbsp;&nbsp;18:40:28</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;-1.0</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;43.20542404207645</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;2.7777777777777777e-10</h4><br><h4>Est Speed: &nbsp;&nbsp;155539526551.47522</h4><br><h4>Altitude: &nbsp;&nbsp;24.1</h4><br></div>`)[0];
+                popup_6eff3b4d442e235f6716815c4bac780f.setContent(html_e5362c6807fc12886378d487470867ac);
+            
+        
+
+        circle_marker_4850f95c160d0f00ddafd4545b0f0628.bindPopup(popup_6eff3b4d442e235f6716815c4bac780f)
+        ;
+
+        
+    
+    
+            var circle_marker_4a1eeea28612cfff3c2e9f53593961cc = L.circleMarker(
+                [40.780514, -73.95483],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_bd319dffa39640b018da1e05a7dc89bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57c3989f29141719cdbab2edf8095090 = $(`<div id="html_57c3989f29141719cdbab2edf8095090" style="width: 100.0%; height: 100.0%;"><h4>Ground Walk&nbsp;&nbsp;19:01:19</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;-1.0</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;2999.6277140203124</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;2.7777777777777777e-10</h4><br><h4>Est Speed: &nbsp;&nbsp;10798659770473.125</h4><br><h4>Altitude: &nbsp;&nbsp;28.5</h4><br></div>`)[0];
+                popup_bd319dffa39640b018da1e05a7dc89bc.setContent(html_57c3989f29141719cdbab2edf8095090);
+            
+        
+
+        circle_marker_4a1eeea28612cfff3c2e9f53593961cc.bindPopup(popup_bd319dffa39640b018da1e05a7dc89bc)
+        ;
+
+        
+    
+    
+            var circle_marker_4cadf0a415ebfa07f857e5742b9b3f30 = L.circleMarker(
+                [40.757129, -73.972612],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_72b26bd3dd40fc33efd07f62a1c98c77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39ea0122cf33e4234170a205e521b452 = $(`<div id="html_39ea0122cf33e4234170a205e521b452" style="width: 100.0%; height: 100.0%;"><h4>Ground Walk&nbsp;&nbsp;19:21:08</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;-1.0</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;457.94092988584157</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;0.0</h4><br><h4>Est Speed: &nbsp;&nbsp;0</h4><br><h4>Altitude: &nbsp;&nbsp;0.0</h4><br></div>`)[0];
+                popup_72b26bd3dd40fc33efd07f62a1c98c77.setContent(html_39ea0122cf33e4234170a205e521b452);
+            
+        
+
+        circle_marker_4cadf0a415ebfa07f857e5742b9b3f30.bindPopup(popup_72b26bd3dd40fc33efd07f62a1c98c77)
+        ;
+
+        
+    
+    
+            var circle_marker_3a2edff93fd20359ebd0e5a26039724b = L.circleMarker(
+                [40.753938, -73.976047],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_e6cf3128b6d44c79e63ae0d6213c413d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7679548846a41ef4c21742143f117e7 = $(`<div id="html_d7679548846a41ef4c21742143f117e7" style="width: 100.0%; height: 100.0%;"><h4>Ground Trans&nbsp;&nbsp;19:26:51</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;4.07</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;66.84725013252262</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;2.7777777777777777e-10</h4><br><h4>Est Speed: &nbsp;&nbsp;240650100477.08142</h4><br><h4>Altitude: &nbsp;&nbsp;27.1</h4><br></div>`)[0];
+                popup_e6cf3128b6d44c79e63ae0d6213c413d.setContent(html_d7679548846a41ef4c21742143f117e7);
+            
+        
+
+        circle_marker_3a2edff93fd20359ebd0e5a26039724b.bindPopup(popup_e6cf3128b6d44c79e63ae0d6213c413d)
+        ;
+
+        
+    
+    
+            var circle_marker_d5e5d9dcfe256b6d61cd168151907a39 = L.circleMarker(
+                [40.753424, -73.975635],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_00666b8c3d626bd83583a6abff572eea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ebcdb43fed2320f4af2be4f24fcc9bfd = $(`<div id="html_ebcdb43fed2320f4af2be4f24fcc9bfd" style="width: 100.0%; height: 100.0%;"><h4>Ground Walk&nbsp;&nbsp;19:47:44</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;-1.0</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;411.12881131615035</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;2.7777777777777777e-10</h4><br><h4>Est Speed: &nbsp;&nbsp;1480063720738.1414</h4><br><h4>Altitude: &nbsp;&nbsp;13.4</h4><br></div>`)[0];
+                popup_00666b8c3d626bd83583a6abff572eea.setContent(html_ebcdb43fed2320f4af2be4f24fcc9bfd);
+            
+        
+
+        circle_marker_d5e5d9dcfe256b6d61cd168151907a39.bindPopup(popup_00666b8c3d626bd83583a6abff572eea)
+        ;
+
+        
+    
+    
+            var circle_marker_61e838f1f39109328b71e8baddd26d15 = L.circleMarker(
+                [40.751938, -73.971176],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_19c4c49b314880a68b83b1890d944ac1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15bfc571ef5eb4e8dea040a172605c4a = $(`<div id="html_15bfc571ef5eb4e8dea040a172605c4a" style="width: 100.0%; height: 100.0%;"><h4>Ground Walk&nbsp;&nbsp;20:08:46</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;-1.0</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;126.49170510724164</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;2.7777777777777777e-10</h4><br><h4>Est Speed: &nbsp;&nbsp;455370138386.06995</h4><br><h4>Altitude: &nbsp;&nbsp;13.4</h4><br></div>`)[0];
+                popup_19c4c49b314880a68b83b1890d944ac1.setContent(html_15bfc571ef5eb4e8dea040a172605c4a);
+            
+        
+
+        circle_marker_61e838f1f39109328b71e8baddd26d15.bindPopup(popup_19c4c49b314880a68b83b1890d944ac1)
+        ;
+
+        
+    
+    
+            var circle_marker_eab7c492738d07d11c781325e89b31ef = L.circleMarker(
+                [40.752395, -73.972548],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_af522219c35df96f44a89390251069eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb32411475b7e437adbb070092f49b81 = $(`<div id="html_fb32411475b7e437adbb070092f49b81" style="width: 100.0%; height: 100.0%;"><h4>Ground Walk&nbsp;&nbsp;20:29:19</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;-1.0</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;253.45711134566824</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;2.7777777777777777e-10</h4><br><h4>Est Speed: &nbsp;&nbsp;912445600844.4056</h4><br><h4>Altitude: &nbsp;&nbsp;13.4</h4><br></div>`)[0];
+                popup_af522219c35df96f44a89390251069eb.setContent(html_fb32411475b7e437adbb070092f49b81);
+            
+        
+
+        circle_marker_eab7c492738d07d11c781325e89b31ef.bindPopup(popup_af522219c35df96f44a89390251069eb)
+        ;
+
+        
+    
+    
+            var circle_marker_09735b1341f8aac8f6d69a63590328e2 = L.circleMarker(
+                [40.753311, -73.975297],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_ff248a8663b067066cf63d5db6fc819c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2103b4dc48938437081cfd9fd54c724f = $(`<div id="html_2103b4dc48938437081cfd9fd54c724f" style="width: 100.0%; height: 100.0%;"><h4>Ground Walk&nbsp;&nbsp;20:50:07</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;-1.0</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;386.2925362294856</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;2.7777777777777777e-10</h4><br><h4>Est Speed: &nbsp;&nbsp;1390653130426.1482</h4><br><h4>Altitude: &nbsp;&nbsp;13.4</h4><br></div>`)[0];
+                popup_ff248a8663b067066cf63d5db6fc819c.setContent(html_2103b4dc48938437081cfd9fd54c724f);
+            
+        
+
+        circle_marker_09735b1341f8aac8f6d69a63590328e2.bindPopup(popup_ff248a8663b067066cf63d5db6fc819c)
+        ;
+
+        
+    
+    
+            var circle_marker_bf5bb7a50f34f312259d1ab6cc2b4f87 = L.circleMarker(
+                [40.756534, -73.973576],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_562ba4230b255b031c336e3367050075 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e309661532839ffd764046d3ac5b9341 = $(`<div id="html_e309661532839ffd764046d3ac5b9341" style="width: 100.0%; height: 100.0%;"><h4>Ground Walk&nbsp;&nbsp;21:11:18</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;-1.0</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;3297.4287290459715</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;0.0</h4><br><h4>Est Speed: &nbsp;&nbsp;0</h4><br><h4>Altitude: &nbsp;&nbsp;23.1</h4><br></div>`)[0];
+                popup_562ba4230b255b031c336e3367050075.setContent(html_e309661532839ffd764046d3ac5b9341);
+            
+        
+
+        circle_marker_bf5bb7a50f34f312259d1ab6cc2b4f87.bindPopup(popup_562ba4230b255b031c336e3367050075)
+        ;
+
+        
+    
+    
+            var circle_marker_f98da8b5d10789841680a4ff4a2b5352 = L.circleMarker(
+                [40.782465, -73.954548],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_accbb88fd61ef7098f87f72d01ddc1e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec39982346474cbcfc366df14050a4cb = $(`<div id="html_ec39982346474cbcfc366df14050a4cb" style="width: 100.0%; height: 100.0%;"><h4>Ground Walk&nbsp;&nbsp;21:25:46</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;-1.0</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;2627.6769549425717</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;0.0</h4><br><h4>Est Speed: &nbsp;&nbsp;0</h4><br><h4>Altitude: &nbsp;&nbsp;22.1</h4><br></div>`)[0];
+                popup_accbb88fd61ef7098f87f72d01ddc1e1.setContent(html_ec39982346474cbcfc366df14050a4cb);
+            
+        
+
+        circle_marker_f98da8b5d10789841680a4ff4a2b5352.bindPopup(popup_accbb88fd61ef7098f87f72d01ddc1e1)
+        ;
+
+        
+    
+    
+            var circle_marker_37aec36514c575d602d4884e501696c9 = L.circleMarker(
+                [40.802748, -73.938514],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 15}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+        var popup_6d24263587c3cb973fbd0615eb8a7e35 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c5138eebab7b2a223dbfac448896a36 = $(`<div id="html_8c5138eebab7b2a223dbfac448896a36" style="width: 100.0%; height: 100.0%;"><h4>Ground Walk&nbsp;&nbsp;21:30:54</h4><br><h4>APP: &nbsp;&nbsp;4.0</h4><br><h4>Speed: &nbsp;&nbsp;-1.0</h4><br><h4>Distance(Now-Next): &nbsp;&nbsp;0</h4><br><h4>Duration(Now-Next): &nbsp;&nbsp;0</h4><br><h4>Est Speed: &nbsp;&nbsp;0</h4><br><h4>Altitude: &nbsp;&nbsp;22.1</h4><br></div>`)[0];
+                popup_6d24263587c3cb973fbd0615eb8a7e35.setContent(html_8c5138eebab7b2a223dbfac448896a36);
+            
+        
+
+        circle_marker_37aec36514c575d602d4884e501696c9.bindPopup(popup_6d24263587c3cb973fbd0615eb8a7e35)
+        ;
+
+        
+    
+    
+            var poly_line_b3ff24b36bfd18d4e1cf5b99cbac6d6a = L.polyline(
+                [[40.753567, -73.976306], [40.754847, -73.979795], [40.754711, -73.979647], [40.754886, -73.979787], [40.754931, -73.97986], [40.75483, -73.979766], [40.754846, -73.979775], [40.754888, -73.979796], [40.754835, -73.979776], [40.754858, -73.979808], [40.754515, -73.977465], [40.753263, -73.977946], [40.779871, -73.955278], [40.776619, -73.9528], [40.776597, -73.952791], [40.776395, -73.952038], [40.780228, -73.954483], [40.780514, -73.95483], [40.757129, -73.972612], [40.753938, -73.976047], [40.753424, -73.975635], [40.751938, -73.971176], [40.752395, -73.972548], [40.753311, -73.975297], [40.756534, -73.973576], [40.782465, -73.954548], [40.802748, -73.938514]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_9e2d7c7d033ac9d050a6f1f77a53274a);
+        
+    
+            map_9e2d7c7d033ac9d050a6f1f77a53274a.fitBounds(
+                [[40.751938, -73.97986], [40.802748, -73.938514]],
+                {}
+            );
+        
+</script>
+</html>
